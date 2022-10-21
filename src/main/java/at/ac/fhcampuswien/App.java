@@ -60,7 +60,6 @@ public static void guessingGame (int numberToGuess) {
         tries++;
     }
         System.out.println("You lost! Have you ever heard of divide & conquer?");
-
 }
 
 public static int randomNumberBetweenOneAndHundred (){
@@ -80,8 +79,6 @@ public static boolean swapArrays(int[] array1, int[] array2){
     }
     return true;
 }
-
-
 public static String camelCase(String text){
     char[] s = text.toCharArray();
     if (s[0] >= 97 && s[0] <= 122)
@@ -98,13 +95,12 @@ public static String camelCase(String text){
         if (s[i] > 0 && s[i]<=64||s[i] >=91&& s[i] <=96||s[i] >= 123 && s[i]<=127){
             s[i]=32;
         }
-
     }
     String spaces = String.valueOf(s).replaceAll(" ","");
     return spaces;
 }
 
-    public static int checkDigit(int[] array) {
+public static int checkDigit(int[] array) {
     int sum= 0;
     int weighting = 2;
     int residual;
